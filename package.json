@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "html-builder task for RSSchool",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ./02-write-file/index.js",
+    "lint:fix": "eslint ./02-write-file/index.js --fix",
+    "lint:fix3": "eslint ./03-files-in-folder/index.js --fix"
   },
   "author": "evgeniimal",
   "license": "ISC",
