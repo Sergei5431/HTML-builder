@@ -6,7 +6,8 @@
     "lint": "eslint ./02-write-file/index.js",
     "lint:fix": "eslint ./02-write-file/index.js --fix",
     "lint:fix3": "eslint ./03-files-in-folder/index.js --fix",
-    "lint:fix4": "eslint ./04-copy-directory/index.js --fix"
+    "lint:fix4": "eslint ./04-copy-directory/index.js --fix",
+    "lint:fix6": "eslint ./06-build-page/index.js --fix"
   },
   "author": "evgeniimal",
   "license": "ISC",
