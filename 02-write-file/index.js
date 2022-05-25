@@ -11,6 +11,12 @@ stdout.write('Введите текст:\n');
 
 stdin.on('data',  (data)=>{
   writeStream.write(data);
+  let qq = data.toString()
+  qq = qq.slice(0, qq.length - 2);
+  if (qq === 'exit'){
+    console.log('До свидания');
+    process.exit();
+  }
 });
 
 process.on('SIGINT', () => exit());

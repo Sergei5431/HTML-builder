@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-fs.readdir(path.join(__dirname, 'fils'), (error, data)=>{
+fs.readdir(path.join(__dirname, 'files'), (error, data)=>{
   if(error) console.log(error);
   fs.mkdir(path.join(__dirname, 'files-copy'), ()=>{
     data.forEach(e=>{
