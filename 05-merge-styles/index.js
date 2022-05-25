@@ -2,7 +2,6 @@
 const fs = require('fs')
 const path = require('path')
 const pathStyles = path.join(__dirname, 'styles')
-// const pathBundle =path.join(__dirname, '/project-dist/bundle.css')
 const pathBundle =path.join(__dirname, 'project-dist', 'bundle.css')
 let arrayCss = []
 
@@ -21,7 +20,7 @@ fs.readdir(pathStyles, (error,data)=>{
                         fs.readFile(path.join(pathStyles, file), 'utf-8', (error, data1)=>{
                             if(error)console.log(error)
                             arrayCss.push(data1)
-                            fs.appendFile(pathBundle, arrayCss.join('\n'), ()=>{})
+                            fs.writeFile(pathBundle, arrayCss.join('\n'), ()=>{})
                         })
                     }
                     
